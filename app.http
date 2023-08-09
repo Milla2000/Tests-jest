@@ -1,0 +1,57 @@
+POST http://localhost:4500/project
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAxZmY5Nzk0LWUxNmUtNGRkNC1hNDg1LTAwMTkxZDdkNzM5NyIsImVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJtaWxsYWplc3NvMjAwMEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlzc2VudCI6dHJ1ZSwiaWF0IjoxNjkxMDY3MzE3LCJleHAiOjE2OTExMDMzMTd9.S8-y8NQwPxmBQpv9qrmmI5GHvvYpXy_fGnxQN02ZQvk
+
+{
+    "project_name": "Build Dam",
+    "description":"Build a Dam capable of holding 40000 litres",
+    "project_location":"Nyeri",
+    "startdate":"2023-7-25",
+    "enddate":"2023/7/25"
+}
+
+### GET ALL PROJECTS
+GET http://localhost:4500/project
+
+### GET ONE PROJECT
+GET http://localhost:4500/project/2f4f3d0d-4cb3-4329-af41-759fedf3bab2
+
+### UPDATING PROJECT
+
+PUT http://localhost:4500/project/2f4f3d0d-4cb3-4329-af41-759fedf3bab2
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAxZmY5Nzk0LWUxNmUtNGRkNC1hNDg1LTAwMTkxZDdkNzM5NyIsImVfbmFtZSI6IkpvaG4gRG9lIiwiZW1haWwiOiJtaWxsYWplc3NvMjAwMEBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImlzc2VudCI6dHJ1ZSwiaWF0IjoxNjkxMDY3MzE3LCJleHAiOjE2OTExMDMzMTd9.S8-y8NQwPxmBQpv9qrmmI5GHvvYpXy_fGnxQN02ZQvk
+
+
+{
+    "project_name": "Build ",
+    "description":"Build ",
+    "project_location":"Tharaka Nithi",
+    "startdate":"2023-9-25",
+    "enddate":"2023-8-25"
+}
+
+###
+DELETE http://localhost:4500/project/044530dd-e0d8-4961-aa8b-df644d05c8f6
+
+
+###
+POST http://localhost:4500/employee/register
+Content-Type: application/json
+
+{
+    "e_name": "Kijana Mkubwa",
+    "email":"mjwachira12345@gmail.net",
+    "password":"12345678"
+    
+}
+###
+POST http://localhost:4500/employee/login
+Content-Type: application/json
+
+{
+    
+    "email":"mjwachira1@gmail.net",
+    "password":"12345678"
+    
+}
